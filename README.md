@@ -10,7 +10,7 @@ A simple tmux plugin for quickly finding files or folders with `fzf` and pasting
 
 ## Prerequisites
 
--   `tmux`
+-   `tmux` (version 3.2 or higher, need to support popup)
 -   `fzf` (Install with `sudo apt install fzf` or `brew install fzf`)
 
 ## Installation with TPM
