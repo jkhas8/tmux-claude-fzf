@@ -18,7 +18,7 @@ A simple tmux plugin for quickly finding files or folders with `fzf` and pasting
 1.  Add the plugin to your list of TPM plugins in `.tmux.conf`:
 
     ```tmux
-    set -g @plugin 'your-github-username/tmux-claude-fzf'
+    set -g @plugin 'jkhas8/tmux-claude-fzf'
     ```
 
 2.  Press `prefix + I` to fetch the plugin.
