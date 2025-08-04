@@ -20,7 +20,7 @@ get_tmux_option() {
 KEY_BINDING=$(get_tmux_option "@claude-fzf-key" "F")
 
 # The command to run. It opens a popup in the current pane's directory.
-COMMAND_TO_RUN="display-popup -E -c #{pane_current_path} 'bash $FZF_SCRIPT_PATH #{pane_id}'"
+COMMAND_TO_RUN="display-popup -E -d '$(pwd)' 'bash $FZF_SCRIPT_PATH #{pane_id}'"
 
 # Bind the key to the command.
 tmux bind-key "$KEY_BINDING" "$COMMAND_TO_RUN"
