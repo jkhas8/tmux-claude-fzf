@@ -1,6 +1,6 @@
-# Tmux Claude FZF
+# Tmux AI Mention FZF
 
-A simple tmux plugin for quickly finding files or folders with `fzf` and pasting them as an `@mention` into the current pane. Ideal for providing file context to AI coding assistants directly within the terminal.
+A simple tmux plugin for quickly finding files or folders with `fzf` and pasting them as an `@mention` into the current pane. Ideal for providing file context to AI coding assistants (Claude Code, Antigravity, Cursor, etc.) directly within the terminal.
 
 ![demo](https://user-images.githubusercontent.com/username/repo/demo.gif)  ## Features
 
@@ -18,7 +18,7 @@ A simple tmux plugin for quickly finding files or folders with `fzf` and pasting
 1.  Add the plugin to your list of TPM plugins in `.tmux.conf`:
 
     ```tmux
-    set -g @plugin 'jkhas8/tmux-claude-fzf'
+    set -g @plugin 'jkhas8/tmux-ai-mention-fzf'
     ```
 
 2.  Press `prefix + I` to fetch the plugin.
@@ -37,5 +37,5 @@ You can customize the keybinding by adding this line to your `.tmux.conf` (befor
 
 ```tmux
 # Set the custom key for the fzf popup to 'J'
-set -g @claude-fzf-key 'J'
+set -g @ai-mention-fzf-key 'J'
 ```

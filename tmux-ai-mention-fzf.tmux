@@ -17,7 +17,7 @@ get_tmux_option() {
 }
 
 # The key to open the fzf popup. Can be customized in .tmux.conf.
-KEY_BINDING=$(get_tmux_option "@claude-fzf-key" "F")
+KEY_BINDING=$(get_tmux_option "@ai-mention-fzf-key" "F")
 
 # The command to run. It opens a popup in the current pane's directory.
 COMMAND_TO_RUN="display-popup -E -d '$(pwd)' 'bash $FZF_SCRIPT_PATH #{pane_id}'"
@@ -26,4 +26,4 @@ COMMAND_TO_RUN="display-popup -E -d '$(pwd)' 'bash $FZF_SCRIPT_PATH #{pane_id}'"
 tmux bind-key "$KEY_BINDING" "$COMMAND_TO_RUN"
 
 # Display a confirmation message when the plugin loads.
-tmux display-message "tmux-claude-fzf loaded. Press Prefix + $KEY_BINDING to open fzf."
+tmux display-message "tmux-ai-mention-fzf loaded. Press Prefix + $KEY_BINDING to open fzf."
